@@ -1,0 +1,88 @@
+mat-grid-tile {
+    background: rgb(177, 25, 25);
+  }
+
+
+  .mat-card {
+    margin-bottom: 10px !important;
+  }
+  
+  .image-container {
+    display: flex;
+  }
+  
+  .image-container img {
+    transition: transform 0.3s ease;
+    margin-right: 10px; /* Espacio entre las imágenes */
+  }
+  
+  .image-container img:last-child {
+    margin-right: 0; /* Eliminar el margen derecho de la última imagen */
+  }
+  
+  .image-container img:hover {
+    transform: scale(1.1);
+  }
+  
+
+  
+  img { 
+    max-width: 100%;
+    height: 300px;
+  }
+  .contenedor-imagen{
+    padding: 10px;
+    display: inline-block;
+  }
+
+  /*  */
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+  }
+  
+  .box {
+    width: 175px;
+    height: 250px;
+    background-color: #ccc;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .box:hover {
+    transform: scale(1.1);
+  }
+  
+  .details {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .whatsapp {
+    background-color: #25D366;
+  }
+  
+  .facebook {
+    background-color: #3b5998;
+  }
+  
+  .instagram {
+    background-color: #C13584;
+  }
+  
+  .fa-whatsapp,
+  .fa-facebook,
+  .fa-instagram {
+    font-size: 48px;
+    color: #fff;
+  }
+  

@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+body {
+    background-image: url('../login/img/wallhaven-ex9gwo_1920x1080.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    width: 1000px;
+    height: 600px;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.container .box {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 25px 0;
+}
+
+.container .box .poster {
+    position: absolute;
+    display: flex;
+    right: 0;
+    width: 55%;
+    top: 0;
+    height: 100%;
+    border-radius: 25px;
+    overflow: hidden;
+    transition: all 0.55s;
+    transform: translateX(0);
+    z-index: 2;
+}
+
+.container .box .poster::before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    display: block;
+    min-width: 100%;
+    height: 100%;
+    background-color: rgb(240,245,255, 0.9);
+}
+
+.container.active .box .poster {
+    transform: translateX(-82%);
+}
+
+.container.active .box .poster .logo {
+    transform: translateX(-100%);
+}
+
+.container.active .box .form.form_signIn {
+    transform: translateX(-10%);
+}
+
+.container.active .box .form.form_signUp {
+    transform: translateX(0%);
+}
+
+.container .box .form.form_signUp {
+    transform: translateX(10%);
+}
+
+.container .box .poster .logo {
+    position: relative;
+    background-color: #F0F5FF;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 100%;
+    height: 100%;
+    transition: all 0.55s;
+    z-index: 2;
+}
+
+.box .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    transition: all 0.25s;
+}
+
+.box .form.form_signIn{
+    width: 50%;
+    margin: auto;
+}
+
+.box .form.form_signUp{
+    height: 100%;
+    width: calc(100% - 50%);
+}
+
+.box .form .optionLanguage {
+    font-size: 13px;
+    font-weight: 500;
+    color: #B6C7EB;
+    padding: 4px 8px;
+    /* display: inline-block; */
+    background-color: #F0F5FF;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+.box .form .optionLanguage .bi {
+    margin: 0 3px;
+}
+
+.box .form .optionLanguage .bi-caret-down-fill {
+    font-size: 11px;
+}
+
+.form .info .register {
+    color: #222;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.form .info h3 {
+    color: #222;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.form .info .forgot {
+    color: #AEABBF;
+    font-size: 14px;
+}
+
+.form .info .forgot a {
+    color: #4E75FF;
+    font-size: 14px;
+    font-weight: 450;
+    text-decoration: none;
+}
+
+.form .notify .data {
+    margin: 35px 0;
+}
+
+.form .notify .data .form_input {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 330px;
+    height: 45px;
+    border-radius: 8px;
+    border: 1.5px solid #BDBBC8;
+    margin: 35px 0;
+    z-index: 1;
+}
+
+.form .notify .data .form_input.active {
+    border: 1.5px solid red;
+}
+
+.form .notify .data label {
+    position: absolute;
+    top: -20px;
+    font-size: 14px;
+    font-weight: 450;
+}
+
+.form .notify .data input {
+    padding: 0 10px;
+    font-size: 15px;
+    width: 90%;
+    height: 100%;
+    border: none;
+    outline: none;
+    color: #8d8d8f;
+    font-weight: 300;
+    background-color: transparent;
+}
+
+.form .notify .data .icon {
+    font-size: 18px;
+    pointer-events: none;
+}
+
+.form .notify .data .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: none;
+    outline: none;
+    background-color: #4E75FF;
+    width: 330px;
+    font-weight: 450;
+    border-radius: 8px;
+    height: 45px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3),
+    0 2px 4px rgba(0, 0, 0, 0.45);
+}
+
+.form .notify .data .btn p {
+    color: #fff;
+}
+
+.form .notify .data .btn .check {
+    font-size: 23px;
+    color: #fff;
+}
+
+.form .notify .details {
+    color: #DAD8E2;
+    font-size: 10px;
+    font-weight: 450;
+    max-width: 300px;
+}

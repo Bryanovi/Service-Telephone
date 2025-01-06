@@ -1,0 +1,45 @@
+<div class="container col-md-10">
+  <div class="card custom-card">
+    <div class="card-body">
+      <form [formGroup]="formulario" (ngSubmit)="grabar()" class="form-container d-flex flex-row">
+        <div class="form-group flex-grow-1 me-2">
+          <label for="producto">Producto</label>
+          <select class="form-control" id="producto" formControlName="producto">
+            <option value="">Seleccionar producto</option>
+            <option *ngFor=" let registro of data" [value]="registro.marca">{{ registro.marca }}</option>
+          </select>
+        </div>
+        <!-- Campo de descuento -->
+        <div class="form-group flex-grow-1 me-2">
+          <label for="descuento">Descuento</label>
+          <div class="input-group">
+            <input type="number" class="form-control" id="descuento" formControlName="descuento">
+            <span class="input-group-text"><i class="fas fa-percentage"></i></span>
+          </div>
+        </div>
+
+        <!-- Campo de fecha de inicio -->
+        <div class="form-group flex-grow-1 me-2">
+          <label for="fechaInicio">Fecha de inicio</label>
+          <div class="input-group">
+            <input type="date" class="form-control" id="fechaInicio" formControlName="fechaInicio">
+            <span class="input-group-text"><i class="fas fa-calendar-alt"></i></span>
+          </div>
+        </div>
+
+        <!-- Campo de fecha de fin -->
+        <div class="form-group flex-grow-1 me-2">
+          <label for="fechaFin">Fecha de fin</label>
+          <div class="input-group">
+            <input type="date" class="form-control" id="fechaFin" formControlName="fechaFin">
+            <span class="input-group-text"><i class="fas fa-calendar-alt"></i></span>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary m-2" [disabled]="formulario.invalid">
+          <i class="fas fa-plus"></i> Añadir
+        </button>
+      </form>
+    </div>
+  </div>
+</div>

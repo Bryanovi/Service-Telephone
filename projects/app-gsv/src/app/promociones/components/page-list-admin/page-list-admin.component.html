@@ -1,0 +1,19 @@
+<div class="container">
+  <gsv-title></gsv-title>
+  <!-- Formulario para añadir producto -->
+  <div class="form">
+    <gsv-form [data]="registrosProducto" (formularioEnviado)="grabarFormulario($event)"></gsv-form>
+  </div>
+</div>
+
+<gsv-container>
+  <perfect-scrollbar>
+    <gsv-promocion-table-admin [data]=" data" [metaDataColumns]="metaDataColumns"
+      (onClickEliminar)="accionEliminar($event)"></gsv-promocion-table-admin>
+  </perfect-scrollbar>
+
+  <gsv-paginator [length]=" totalRegistros" (onChangePage)="changePage($event)">
+  </gsv-paginator>
+
+
+</gsv-container>

@@ -1,0 +1,39 @@
+<nav class="header" class="navbar navbar-expand px-2" style=" background-color: #720294">
+  <div class="side-nav-button p-2 me-3 text-light" (click)="SideNavToggle()">
+    <i class="fa-solid {{menuStatus ? 'fa-circle-chevron-left' : 'fa-circle-chevron-right'}}"></i>
+  </div>
+  <a class="navbar-brand px-4" style="color: antiquewhite;" href="#">
+      <div class="dragon">
+        <i class="bi bi-phone-vibrate-fill"></i>
+        Cell Dragon
+        <i class="bi bi-rocket-takeoff-fill"></i>
+      </div>
+    
+  </a> 
+
+  <div class="navbar-collapse d-flex ml-auto" *ngIf="validarUser|async as user">
+    <div style="color: rgb(224, 240, 255); justify-content: space-between; font-family: Georgia, 'Times New Roman', Times, serif;">
+      <i class="bi bi-person-check"></i>
+      {{user.email}}
+    </div>
+    <i class="fas fa-user" class="text-white"></i>
+    
+    <button class="logout-button" (click)="logout()">
+      <i class="bi bi-box-arrow-left"></i>
+      <span>&nbsp;</span>SALIR
+    </button>
+  </div>
+
+  <div class="navbar-collapse d-flex ml-auto" *ngIf="!(validarUser|async)">
+    <button class="iniciar-sesion-button" (click)="iniciarSesion()">
+      <i class="bi bi-person-fill"></i>
+      INICIAR SESION
+    </button>
+  </div>
+  <div class="" *ngIf="!(validarUser|async)">
+    <button class="iniciar-sesion-button" (click)="registrarSesion()">
+      <i class="bi bi-person-fill"></i>
+      REGISTRARSE
+    </button>
+  </div>
+</nav>

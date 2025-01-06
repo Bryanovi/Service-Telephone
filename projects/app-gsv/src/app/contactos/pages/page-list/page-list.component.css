@@ -1,0 +1,16 @@
+.btn-purple {
+  background-color: #6c63ff;
+  border-color: #6c63ff;
+}
+
+.btn-purple.animate-btn {
+  transition: background-color 0.3s ease;
+}
+
+.btn-purple.animate-btn:hover {
+  background-color: #4f47c2;
+}
+
+.modal-content {
+  border-color: #6c63ff;
+}

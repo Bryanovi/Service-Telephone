@@ -1,0 +1,30 @@
+
+<gsv-title></gsv-title>
+
+
+
+<h2>
+Bienvenidos selecciona algún modulo para poder ingresar.
+
+</h2>
+<img style="width: 40%;" src="https://img.freepik.com/foto-gratis/mujer-feliz-tomando-selfie_23-2148547560.jpg?w=1060&t=st=1685040118~exp=1685040718~hmac=a1d8d8198c0709d206f85bb6379b84b22a7ecdf9610c3bac50ea48415a1138cf" alt="">
+<br>
+<div class="side-nav-content">
+  <div class="blurry-background"></div>
+
+  <div class="row row-cols-2 row-cols-md-2 row-cols-lg-4">
+    <div class="col mb-4" *ngFor="let list of listaMenu">
+      <div class="card h-100">
+        <a [routerLink]="list.url" class="card-header">
+          <div>
+            <i class="{{ list.icon }}"></i>
+            <h5 class="card-title">{{ list.title }}</h5>
+          </div>
+          <h3>Ver mas 
+            <i class="bi bi-box-arrow-left"></i>
+          </h3>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

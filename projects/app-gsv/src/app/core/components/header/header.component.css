@@ -1,0 +1,123 @@
+nav {
+  height: 110%;
+}
+
+.header{
+  background-image: url('../login/img/header.jpg');
+}
+
+.side-nav-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.side-nav-button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 25%;
+}
+
+.navbar-collapse {
+  justify-content: end;
+}
+/*  */
+
+.logout-button {
+  font-size: 13px;
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s;
+}
+
+.logout-button:hover {
+  color: #CD113B; /* Cambiar el color del texto a verde claro */
+}
+
+.logout-button::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #CD113B; /* Cambiar el color de la línea a verde claro */
+  transform: scaleX(0);
+  transition: all 0.3s;
+}
+
+.logout-button:hover::after {
+  transform: scaleX(1);
+}
+
+/*  */
+
+.iniciar-sesion-button {
+  font-size: 13px;
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s;
+}
+
+.iniciar-sesion-button:hover {
+  color: #FF7600; /* Cambiar el color del texto a celeste */
+}
+
+.iniciar-sesion-button::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #FF7600; /* Cambiar el color de la línea a celeste */
+  transform: scaleX(0);
+  transition: all 0.3s;
+}
+
+.iniciar-sesion-button:hover::after {
+  transform: scaleX(1);
+}
+
+.dragon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.dragon {
+  display: flex;
+  align-items: center;
+  color: #000;
+  transition: color 0.3s ease;
+}
+
+.dragon:hover {
+  color: #e68bff;
+}
+
+.dragon i {
+  font-size: 16px;
+  transition: transform 0.3s ease;
+}
+
+.dragon-text {
+  font-size: 16px;
+  transition: font-size 0.3s ease;
+}
+
+.dragon:hover .dragon-text {
+  font-size: 24px;
+}
+
+.dragon:hover i {
+  transform: scale(1.2);
+}
