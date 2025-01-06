@@ -1,27 +1,36 @@
-# ProjectVentas
+
+# ProjectStore 🚀
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.6.
 
-## Development server
+## Brief Description ✨
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+**ProjectVentas** is an application developed using **Angular** and **MongoDB**, designed to manage sales and provide features like tracking products, clients, and transactions.
 
-## Code scaffolding
+### Steps for Coding 👨‍💻:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+1. **Generate a new Angular project** 🆕:
+   - Run the command `ng new ProjectVentas` to create a new project.
+   - Choose options such as CSS for styling and routing if needed.
 
-## Build
+2. **Development Server 💻**:
+   - Run `ng serve` to start the local development server and view the app at `http://localhost:4200/`.
+   - The app will automatically reload when you modify any source files.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+3. **Generate components and services ⚙️**:
+   - To create new components, use `ng generate component component-name`.
+   - To create services, directives, or pipes, use `ng generate service service-name`.
 
-## Running unit tests
+4. **Integrate MongoDB 🗄️**:
+   - In the backend, set up MongoDB connection using a service like Mongoose.
+   - Create models for collections such as `Product`, `Client`, and `Sale`.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+5. **Run unit tests 🧪**:
+   - Execute `ng test` to run unit tests through Karma and view the results.
 
-## Running end-to-end tests
+6. **Run end-to-end tests 🛠️**:
+   - Use `ng e2e` to run end-to-end tests that ensure the app's overall functionality works as expected.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+7. **Build the project 🏗️**:
+   - Run `ng build` to compile the project into the `dist/` directory for production.
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
